@@ -1,0 +1,38 @@
+<div class="footer-container">
+	
+	<div class="footer-top">
+		<div class="container">
+			
+			<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_static')->toHtml();?>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="container-inner">
+				<?php echo $this->getChildHtml('footer_payment')?>
+				<?php echo $this->getChildHtml('footer.copyright')?>
+				
+			</div>
+			<div id="back_top">
+				<a href="#back-top"><span><?php /* @escapeNotVerified */ echo __('top'); ?></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+			
+	require(["jquery"], function($){
+
+	   $(window).scroll(function() {
+			if($(this).scrollTop() > 300) {
+				$('#back_top').fadeIn();   
+			} else {
+				$('#back_top').fadeOut();
+			}
+		});
+		   $('#back_top').click(function() {
+			$('body,html').animate({scrollTop:0},500);
+		}); 
+	   
+	});
+</script>

@@ -1,0 +1,20 @@
+<div class="module-group">
+	<div class="container">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col col-md-3 col-sm-12 col-xs-12">
+					<?php echo $this->getLayout()->createBlock('Plazathemes\Recentproductslider\Block\Products')->setTemplate('productslider.phtml')->toHtml();?>
+				</div>
+				<div class="col col-md-3 col-sm-12 col-xs-12">
+					<?php echo $this->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('featureproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col col-md-3 col-sm-12 col-xs-12">
+					<?php echo $this->getLayout()->createBlock('Plazathemes\Saleproductslider\Block\Saleproductslider')->setTemplate('saleproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col col-md-3 col-sm-12 col-xs-12">
+					<?php echo $this->getLayout()->createBlock('Magento\Newsletter\Block\Subscribe')->setTemplate('subscribe.phtml')->toHtml();?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

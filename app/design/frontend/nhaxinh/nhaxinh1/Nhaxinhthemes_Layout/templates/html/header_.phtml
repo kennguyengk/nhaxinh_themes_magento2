@@ -1,0 +1,198 @@
+<?php $block->renderFileLessToCss(); ?>
+<div id="lucian_header123" class="header-container">
+	<div class="top-link">
+		<div class="container">
+			<div class="container-inner">
+				<div class="top-corporate hidden-xs">	
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate')->toHtml();?>
+				</div>
+				<div class="top-corporate top-corporate-mobile hidden-lg hidden-md hidden-sm">
+					<div class="owl-container">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate')->toHtml();?>
+					</div>
+					<script type="text/javascript">
+						require(["jquery"], function($){
+							
+						   $(".top-corporate-mobile .ma-corporate-about").owlCarousel({ 
+								autoPlay : false,
+								slideSpeed : 1000,
+								navigation : false,
+								stopOnHover : true,
+								pagination : false,
+								items : 4,
+								itemsDesktop : [1199,4],
+								itemsDesktopSmall : [992,4],
+								itemsTablet: [767,3],
+								itemsMobile : [479,2],
+								addClassActive : true,
+								scrollPerPage:false
+						   });
+						   
+						});
+					</script> 
+				</div>
+				<div class="box-setting">
+					<div class="box-language hidden-sm hidden-xs">
+						<?php echo $this->getChildHtml("store_switcher"); ?>
+						<?php echo $this->getChildHtml("store_language"); ?>
+						<?php echo $this->getChildHtml("currency"); ?>
+					</div>
+					<?php echo $this->getChildHtml("minicart");?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header_text')->toHtml();?>
+	<div class="header-inner">
+		<div class="container">
+			<div class="container-inner">
+				<div class="open-menu hidden-lg hidden-md" title="<?php /* @escapeNotVerified */ echo __('Open Menu'); ?>"><span><?php /* @escapeNotVerified */ echo __('menu'); ?></span></div>
+				<div class="box-menu-content">
+					<div class="container-fluid">
+						<div class="container-inner">
+							<div class="row">
+								<div class="col-logo col-md-2 col-sm-12 col-xs-12">
+									<div class="logo-home">
+										<?php echo $this->getChildHtml("logo"); ?>
+									</div>
+								</div>
+								<div class="col-content col-md-10 col-sm-12 col-xs-12">
+									<ul class = "tabs-mobile hidden-lg hidden-md">
+										<li class="item item-menu"><?php /* @escapeNotVerified */ echo __('Menu'); ?></li>
+										<li class="item item-account"><?php /* @escapeNotVerified */ echo __('Account'); ?></li>
+										<li class="item item-setting"><?php /* @escapeNotVerified */ echo __('Setting'); ?></li>
+									</ul>
+									
+									<div class="tabs-content-mobile tabs-menu hidden-lg hidden-md">
+										<?php echo $this->getChildHtml("mobilemenu"); ?>
+										
+									</div>
+									<div class="tabs-content-mobile tabs-account hidden-lg hidden-md" style="display:none;">
+										<?php echo $this->getChildHtml("header.links"); ?>
+									</div>
+									<div class="tabs-content-mobile tabs-setting hidden-lg hidden-md" style="display:none;">
+										<?php echo $this->getChildHtml("currency_mobile"); ?>
+										<?php echo $this->getChildHtml("store_language_mobile"); ?>
+										<?php echo $this->getChildHtml("store_switcher_mobile"); ?>
+									</div>
+									
+								</div>
+								<div class="close-menu"><span><?php /* @escapeNotVerified */ echo __('close'); ?></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo-home">
+					<?php echo $this->getChildHtml("logo"); ?>
+				</div>
+				
+				
+				<div class="search-cart">
+					<div class="custom-link hidden-sm hidden-xs">
+						<?php echo $this->getChildHtml("header.links"); ?>
+						<ul class="welcome-text">
+							<?php echo $this->getChildHtml("header"); ?>
+						</ul>
+						
+						
+					</div>
+					<?php echo $this->getChildHtml("top.search"); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-menu hidden-sm hidden-xs">
+		<div class="container">
+			<div class="container-inner">
+				<?php echo $this->getChildHtml("hozmegamenu_top"); ?>
+			</div>
+		</div>
+	</div>
+	
+	<?php echo $this->getChildHtml("page.main.title");?>
+	<?php echo $this->getChildHtml("breadcrumbs");?>
+</div>
+
+	
+<script type="text/javascript">
+require(["jquery"], function($){
+	
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 250) {
+			$('.header-container .top-menu').addClass("fix-header");
+			
+			} else {
+			$('.header-container .top-menu').removeClass("fix-header");
+			
+		}
+		
+	});
+});
+</script>
+<script type="text/javascript">
+require(["jquery"], function($){
+	$(document).ready(function(){
+		$(".open-menu").click(function(){
+			$(".box-menu-content").addClass('active');
+			$(".header-container .top-link").addClass('remove');
+		});
+		$(".close-menu").click(function(){
+			$(".box-menu-content").removeClass('active');
+			$(".header-container .top-link").removeClass('remove');
+		});
+		
+		
+		<!-- choose tabs-->
+		$(".tabs-mobile .item-menu").addClass("active");
+		$(".tabs-mobile .item").click(function(){
+			$(".tabs-mobile .item").removeClass("active");
+			$(this).addClass("active");
+		});
+		$(".tabs-mobile .item-menu").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-menu").css("display","block");
+		});
+		$(".tabs-mobile .item-account").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-account").css("display","block");
+		});
+		$(".tabs-mobile .item-setting").click(function(){
+			$(".tabs-content-mobile").css("display","none");
+			$(".tabs-setting").css("display","block");
+		});
+	});
+	
+	elementClick = '.toogle_click';
+	elementSlide =  '.toogle_content';
+	activeClass = 'active';
+
+	$(elementClick).on('click', function(e){
+		e.stopPropagation();
+		var subUl = $(this).next(elementSlide);
+		if(subUl.is(':hidden'))
+		{
+			subUl.slideDown();
+			$(this).addClass(activeClass);
+		}
+		else
+		{
+			subUl.slideUp();
+			$(this).removeClass(activeClass);
+		}
+		$(elementClick).not(this).next(elementSlide).slideUp();
+		$(elementClick).not(this).removeClass(activeClass);
+		e.preventDefault();
+	});
+	$(elementSlide).on('click', function(e){
+		e.stopPropagation();
+	});
+	$(document).on('click', function(e){
+		e.stopPropagation();
+		var elementHide = $(elementClick).next(elementSlide);
+		$(elementHide).slideUp();
+		$(elementClick).removeClass(activeClass);
+	});
+});
+</script>
+
+

@@ -1,0 +1,141 @@
+//  Fonts
+@font-family-name__base: 'Open Sans';
+@font-family__sans-serif: 'Open Sans';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+
+//
+//  Sidebar
+//  ---------------------------------------------
+@color-white-smoke:#fff;
+@color-gray56:gray;
+@sidebar__background-color: @color-white-smoke;  // Used in cart sidebar, Checkout sidebar, Tier Prices, My account navigation, Rating block background
+
+@copyright__background-color: @color-gray56;
+
+
+// gerenal color
+@general_link_hover_color: #c59340;
+@general_border_color: #ededed;
+@general_link_color: #333333;
+@general_text_color:#707070;
+@general_title_color:#343434;
+@general_product_name_color:#707070;
+@general_price_color:#343434;
+@general_old_price_color:#707070;
+@general_bg_color:#fff;
+@general_new_label_color:#9bf185;
+@general_sale_label_color:#f5cc26;
+
+// header color
+@header_bg_color: #fff;
+@header_toplink_bg_color: #e3e3e3;
+@header_toplink_link_color:#676767;
+@header_topmenu_bg_color: #343434;
+// footer color
+@footer_top_bg_color:#343434;
+@footer_top_title_color:#fff;
+@footer_top_text_color: #999999;
+@footer_top_link_color:#999999;
+@footer_bottom_bg_color:#343434;
+@footer_bottom_text_color: #999999;
+@footer_bottom_link_color :#c59340;
+.buttonMixin() {
+	background: #343434; 
+	border: 0;
+	border-radius: 3px;
+	box-shadow: none;  
+	text-shadow: none; 
+	white-space: nowrap;
+	line-height: 44px;
+    padding: 0 25px;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600; 
+	
+	&:hover {
+		background: @general_link_hover_color; 
+		border: 0; 
+		text-shadow: none;
+		color: #fff;
+	}
+	&:visited{
+	border:0 !important;
+	}
+}
+.noneTextSelect() {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */      
+}
+
+.transition (@transition: 0.5s) {
+	-webkit-transition: all @transition ease-in-out;  
+	-moz-transition:    all @transition ease-in-out;
+	-ms-transition:     all @transition ease-in-out; 
+	-o-transition:      all @transition ease-in-out;  
+}
+.translateY (@translateY: -50%) {
+	-moz-transform:  translateY(@translateY);
+	-webkit-transform: translateY(@translateY);
+	-o-transform: translateY(@translateY);
+	-ms-transform: translateY(@translateY);
+	transform: translateY(@translateY);
+}
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.scaleY (@factor) {
+	-webkit-transform: scaleY(@factor);
+	-moz-transform: 	 scaleY(@factor);
+	-ms-transform: 		 scaleYscaleY(@factor);
+	-o-transform: 		 scaleY(@factor);
+}
+.opacity (@opacity) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.translate (@x, @y:0) {
+	transform:   translate(@x, @y);
+	-webkit-transform:   translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+
+.bg_gradient (@bottom, @left) {
+	background: linear-gradient(bottom left, @bottom, @left);
+    background: -webkit-linear-gradient(bottom left, @bottom, @left);
+    background: -moz-linear-gradient(bottom left, @bottom, @left);
+    background: -o-linear-gradient(bottom left, @bottom, @left); 
+}
+
+@-webkit-keyframes bounceIn{
+
+	0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}
+	50%{opacity:1;-webkit-transform:scale(1.2);transform:scale(1.2)} 
+	100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+	}
+	
+@keyframes bounceIn{
+	
+	0%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}
+	50%{opacity:1;-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)} 
+	100%{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+}
+	
+	.bounceIn {-webkit-animation-name:bounceIn;animation-name:bounceIn }

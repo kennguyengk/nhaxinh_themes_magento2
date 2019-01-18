@@ -1,0 +1,19 @@
+<?php
+/**
+ * Copyright © 2015 portfolio.ken-nguyen.net All rights reserved.
+
+ * @author Ken Nguyen <teogk89@gmail.com>
+ */
+?>
+<?php
+/**
+ * Blog post list toolbar template
+ *
+ * @var $block \Plazathemes\Blog\Block\Post\PostList\Toolbar
+ */
+?>
+<?php if ($block->getCollection()->getSize()): ?>
+    <div class="toolbar toolbar-blog-posts">
+        <?php echo $block->getPagerHtml() ?>
+    </div>
+<?php endif ?>

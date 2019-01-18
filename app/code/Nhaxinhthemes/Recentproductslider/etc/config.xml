@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 portfolio.ken-nguyen.net. All rights reserved.
+
+* @author Ken Nguyen <teogk89@gmail.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+	    <recentproductslider>
+	        <general>
+	            <enable_frontend>1</enable_frontend>
+	            <title>recent</title>
+	            <auto>0</auto>
+	            <pagination>1000</pagination>
+	            <qty>15</qty>
+	            <default>1</default>
+	            <desktop>1</desktop>
+	            <desktop_small>2</desktop_small>
+	            <tablet>2</tablet>
+	            <mobile>1</mobile>
+				<addtocart>0</addtocart>
+				<wishlist>0</wishlist>
+				<compare>0</compare>
+	            <rows>3</rows>
+	            <show_next_back>0</show_next_back>
+	            <show_navigation_control>0</show_navigation_control>
+	        </general>
+	    </recentproductslider>
+	</default>
+</config>

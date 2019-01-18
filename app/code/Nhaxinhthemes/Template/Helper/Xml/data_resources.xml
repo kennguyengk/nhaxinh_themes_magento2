@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<ma_pander>
+        <resource>
+            <title>Pander 1 - Responsive Magento Theme</title>
+            <identifier>homepage_pander1</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div>{{block class="Plazathemes\Newsletterpopup\Block\Newsletterpopup" name="newsletterpopup" template="newsletterpopup.phtml"}}</div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		<resource>
+            <title>Pander 2 - Responsive Magento Theme</title>
+            <identifier>homepage_pander2</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div>{{block class="Plazathemes\Newsletterpopup\Block\Newsletterpopup" name="newsletterpopup" template="newsletterpopup.phtml"}}</div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		<resource>
+            <title>Pander 3 - Responsive Magento Theme</title>
+            <identifier>homepage_pander3</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div>{{block class="Plazathemes\Newsletterpopup\Block\Newsletterpopup" name="newsletterpopup" template="newsletterpopup.phtml"}}</div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		<resource>
+            <title>Pander 4 - Responsive Magento Theme</title>
+            <identifier>homepage_pander4</identifier>
+            <page_layout>2columns-left</page_layout>
+			<content><![CDATA[
+				<div>{{block class="Plazathemes\Newsletterpopup\Block\Newsletterpopup" name="newsletterpopup" template="newsletterpopup.phtml"}}</div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		<resource>
+            <title>Pander 5 - Responsive Magento Theme</title>
+            <identifier>homepage_pander5</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div>{{block class="Plazathemes\Newsletterpopup\Block\Newsletterpopup" name="newsletterpopup" template="newsletterpopup.phtml"}}</div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		<resource>
+            <title>Pander 6 - Responsive Magento Theme</title>
+            <identifier>homepage_pander6</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div>{{block class="Plazathemes\Newsletterpopup\Block\Newsletterpopup" name="newsletterpopup" template="newsletterpopup.phtml"}}</div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		
+        <resource>
+            <title>404 Not Found</title>
+            <identifier>no-route</identifier>
+			<content_heading> Whoops, our bad... </content_heading>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+					<dl><dt>The page you requested was not found, and we have a fine guess why.</dt><dd>
+					<ul class="disc">
+					<li>If you typed the URL directly, please make sure the spelling is correct.</li>
+					<li>If you clicked on a link to get here, the link is outdated.</li>
+					</ul>
+					</dd></dl><dl><dt>What can you do?</dt><dd>Have no fear, help is near! There are many ways you can get back on track with Magento Store.</dd><dd>
+					<ul class="disc">
+					<li><a onclick="history.go(-1); return false;" href="#">Go back</a> to the previous page.</li>
+					<li>Use the search bar at the top of the page to search for your products.</li>
+					<li>Follow these links to get you back on track!<br /><a href="{{store url=""}}">Store Home</a> <span class="separator">|</span> <a href="{{store url="customer/account"}}">My Account</a></li>
+					</ul>
+					</dd></dl>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+</ma_pander>

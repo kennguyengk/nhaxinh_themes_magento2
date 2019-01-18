@@ -1,0 +1,27 @@
+<?php //if($this->customerLoggedIn()): ?>
+    <li class="customer welcome customer-welcome">
+        <span class="customer name">
+            <span><?php echo $this->getCustomerName(); ?></span>
+            <span class="account"><?php echo __('My Account')?><i class="fa fa-angle-down">&nbsp;</i></span>
+        </span>
+		<script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "customer": {
+                            "component": "Magento_Customer/js/view/customer"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+        <?php if($this->getChildHtml()):?>
+        <div class="customer menu customer-menu">
+            <?php echo $this->getChildHtml();?>
+        </div>
+        <?php endif; ?>
+    </li>
+<?php //endif; ?>
+

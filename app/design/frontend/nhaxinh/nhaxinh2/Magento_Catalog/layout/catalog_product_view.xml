@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+			<block class="Magento\Catalog\Block\Product\ProductList\Related" name="product.relatedslider" after="product.info.details" template="Magento_Catalog::product/list/relateproduct.phtml">
+			   <arguments>
+				<argument name="type" xsi:type="string">related</argument>
+			   </arguments>
+			</block>
+			<block class="Magento\Catalog\Block\Product\ProductList\Upsell" name="product.upsellslider" after="product.relatedslider" template="Magento_Catalog::product/list/upsell.phtml">
+			   <arguments>
+				<argument name="type" xsi:type="string">upsell</argument>
+			   </arguments>
+			</block>
+        </referenceContainer>
+		
+		<move element="page.main.title" destination="product.info.main" before="-"/>
+		<referenceBlock name="catalog.product.related" remove="true"/>
+		<referenceBlock name="product.info.upsell" remove="true"/>
+    </body>
+</page>

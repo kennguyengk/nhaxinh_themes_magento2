@@ -1,0 +1,12 @@
+<div class="bestseller-group">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static_author_best')->toHtml();?>
+			</div>
+			<div class="col2 col-md-4 col-sm-12 col-xs-12">
+				<?php echo $this->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('bestsellerproduct.phtml')->toHtml();?>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.top">
+			<block class="Magento\Framework\View\Element\Template" name="corporate" template="Magento_Cms::corporate.phtml" before="-" />
+			<block class="Plazathemes\Bannerslider\Block\Bannerslider" name="Banner"  template="bannerslider.phtml" after="corporate" />
+        </referenceContainer>
+		
+		<referenceContainer name="main">
+			<block class="Plazathemes\Newproductslider\Block\Newproductslider" name="newproductslider" template="newproductslider.phtml" before="-" />
+			<block class="Magento\Framework\View\Element\Template" name="static_top" template="Magento_Cms::static_top.phtml" after="newproductslider"/>
+			
+			<block class="Plazathemes\Pricecountdown\Block\Pricecountdown" ifconfig="pricecountdown/general/enabled" after="static_top" name="pricecountdown" template="saleslider.phtml" />
+			<block class="Magento\Cms\Block\Block" name="category_tap" after="pricecountdown">
+				<arguments>
+					<argument name="block_id" xsi:type="string">category_tab_pander1</argument>
+				</arguments>
+			</block>
+			<block class="Magento\Framework\View\Element\Template" name="module_group" template="Magento_Cms::module_group.phtml" after="category_tap"/>
+			<block class="Plazathemes\Blog\Block\Sidebar\Recent" name="blog.sidebar.recent" after="module_group"  template="sidebar/slider.phtml" />
+			
+			<block class="Magento\Framework\View\Element\Template" name="social_group" template="Magento_Cms::social_group.phtml" after="blog.sidebar.recent"/>
+			
+		</referenceContainer> 
+    </body>
+</page>

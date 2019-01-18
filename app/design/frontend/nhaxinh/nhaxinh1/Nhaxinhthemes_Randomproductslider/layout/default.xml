@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 portfolio.ken-nguyen.net All rights reserved.
+
+* @author Ken Nguyen <teogk89@gmail.com>
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+	<!-- 	<css src='Plazathemes_Randomproductslider::css/owl.carousel.css' media='all' rel='stylesheet' type='text/css'/> -->
+       <!--  <link src='Plazathemes_Randomproductslider::js/owl.carousel.js' type='text/javascript'/> -->
+    </head>
+	<body>
+
+		<referenceContainer name="content">
+
+		<!-- 	<block class="Plazathemes\Randomproductslider\Block\Products" name="Randomproductslider" template="productslider.phtml">
+
+			</block> -->
+
+		</referenceContainer>
+
+	</body>
+</page>

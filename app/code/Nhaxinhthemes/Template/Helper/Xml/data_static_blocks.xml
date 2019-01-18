@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<ma_pander>
+    <blocks>
+		<block>
+            <title>Contact us</title>
+            <identifier>contact_us</identifier>
+            <content>
+                    <![CDATA[
+						<div class="contact-us"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.678625317825!2d-122.39957047637722!3d37.793805380191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858063d63a0215%3A0xcba0af2dfe02048f!2s101+California+Street%2C+San+Francisco%2C+CA+94111%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1419099932976" height="350" width="100%"></iframe></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Payment</title>
+            <identifier>footer_payment</identifier>
+            <content>
+                    <![CDATA[
+						<div class="footer-payment"><a href="#"><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+			
+		
+		<block>
+			<title>Menu Links Pander3</title>
+			<identifier>pt_menu_links_pander3</identifier>
+			<content>
+					<![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store url="enable-cookies"}}">Enable Cookies</a></li>
+						<li><a href="{{store url="contact"}}">contact</a></li>
+						<li class="last"><a href="{{store url="blog"}}">blog </a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+			</content>
+			<is_active>1</is_active>
+		</block>
+		
+		<block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                    <![CDATA[
+						<div class="footer-static" data-mage-init="{&quot;accordion&quot;:{&quot;openedState&quot;: &quot;active&quot;, &quot;collapsible&quot;: true, &quot;active&quot;: false, &quot;multipleCollapsible&quot;: false}}">
+						<ul class="link-footer">
+						<li><a href="{{store url=""}}">home</a></li>
+						<li><a href="{{store url="enable-cookies"}}">Enable Cookies</a></li>
+						<li><a href="{{store url="privacy-policy-cookie-restriction-mode"}}">Privacy and Cookie Policy</a></li>
+						<li><a href="{{store url="contact"}}">contact us</a></li>
+						<li><a href="{{store url="blog"}}">blog</a></li>
+						</ul>
+						<div class="row">
+						<div class="f-col f-col-1 col-sm-6 col-md-3 col-xs-12" data-role="collapsible">
+						<div class="footer-static-title" data-role="title">
+						<h3>My Account</h3>
+						</div>
+						<div class="footer-static-content " data-role="content">
+						<ul class="links">
+						<li class="first"><a href="#">My Addresses</a></li>
+						<li><a href="#">Gift Vouchers</a></li>
+						<li><a href="#">Returns and Exchanges</a></li>
+						<li><a href="#">Shipping Options</a></li>
+						<li><a href="#">My personal info</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="f-col f-col-2 col-sm-6 col-md-3 col-xs-12" data-role="collapsible">
+						<div class="footer-static-title" data-role="title">
+						<h3>INFORMATION</h3>
+						</div>
+						<div class="footer-static-content " data-role="content">
+						<ul class="links">
+						<li class="first"><a href="#">About us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Site Map</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="f-col f-col-3 col-sm-6 col-md-3 col-xs-12" data-role="collapsible">
+						<div class="footer-static-title" data-role="title">
+						<h3>CUSTOM</h3>
+						</div>
+						<div class="footer-static-content " data-role="content">
+						<ul class="links">
+						<li class="first"><a href="#">Product Recall</a></li>
+						<li><a href="#">Gift Vouchers</a></li>
+						<li><a href="#">Returns and Exchanges</a></li>
+						<li><a href="#">Shipping Options</a></li>
+						<li><a href="#">Help &amp; FAQ</a></li>
+						</ul>
+						</div>
+						</div>
+						<div class="f-col f-col-4 col-sm-6 col-md-3 col-xs-12" data-role="collapsible">
+						<div class="footer-static-title" data-role="title">
+						<h3>STORE INFORMATION</h3>
+						</div>
+						<div class="footer-static-content " data-role="content">
+						<div class="footer-contact">
+						<p class="adress"><span>My Company </span>42 avenue des Champs Elys&eacute;es 75000 Paris France</p>
+						<p><span>Call us now:</span> (+1)866-540-3229</p>
+						<p><span>Email:</span> support@plazathemes.com</p>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Corporate1235</title>
+            <identifier>corporate</identifier>
+            <content>
+                    <![CDATA[
+						<div class="ma-corporate-about">
+						<div class="container">
+						<div class="owl-container">
+						<div id="corporate">
+						<div class="col ">
+						<div class="block-wrapper wrapper1">
+						<div class="text-des">
+						<p>Free shipping item</p>
+						<span>For all orders over $500</span></div>
+						</div>
+						</div>
+						<div class="col ">
+						<div class="block-wrapper wrapper2">
+						<div class="text-des">
+						<p>Money back guarantee</p>
+						<span>100% money back guarante</span></div>
+						</div>
+						</div>
+						<div class="col ">
+						<div class="block-wrapper wrapper3">
+						<div class="text-des">
+						<p>Cash on delivery</p>
+						<span>Lorem ipsum dolor amet consectetur</span></div>
+						</div>
+						</div>
+						<div class="col ">
+						<div class="block-wrapper wrapper4">
+						<div class="text-des">
+						<p>Help &amp; Support</p>
+						<span>Call us : + 0123.4567.89</span></div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Top Pander1</title>
+            <identifier>static_top_pander1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-top">
+						<div class="container">
+
+						<div id="static_top">
+						<div class="col ">
+						<div class="image"><a href="{{store url='furniture.html'}}"><img src="{{media url="wysiwyg/img-top-skybook1.jpg"}}" alt="image" /><span class="text"> <span class="text1">new collection 2018</span> <span class="text2">All products with special style</span> </span></a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Middle Pander1</title>
+            <identifier>static_middle_pander1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-middle">
+						<div class="container">
+						<div class="owl-container">
+						<div id="static_middle">
+						<div class="col ">
+						<div class="image"><a href="{{store url='lighting.html'}}"><img src="{{media url="wysiwyg/img1-middle-skybook1.jpg"}}" alt="image" /></a></div>
+						</div>
+						<div class="col ">
+						<div class="image"><a href="{{store url='rooms.html'}}"><img src="{{media url="wysiwyg/img2-middle-skybook1.jpg"}}" alt="image" /> </a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Category Tab Pander1</title>
+            <identifier>category_tab_pander1</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Category products" des_title="Browse the collection of our best selling and top interresting products. You&rsquo;ll definitely find what you are looking for." identify="categorytab" category_id="3,4,5" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" show_short_des="0" row_show="1" show_pager="1" template="categorytab/grid.phtml"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Sidebar</title>
+            <identifier>static_sidebar</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-sidebar">
+						<div class="image"><a href="{{store url='furniture.html'}}"><img src="{{media url="wysiwyg/img-sidebar.jpg"}}" alt="image" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Author Best</title>
+            <identifier>static_author_best</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static-author-best">
+						<div class="col-des">
+						<h2 class="title">Chair best selling</h2>
+						<p class="name">Dinning<span>Chairs</span></p>
+						<p class="code">Use Code:<span>#00147 Pander</span></p>
+						<p class="des">Vestibulum porttitor iaculis gravida. Praesent vestibulum varius placerat. Cras tempor congue neque, id aliquam orci finibus sit amet. Fusce at facilisis arcu. Donec aliquet nulla id turpis semper, a bibendum metus vulputate. Suspendisse potenti.</p>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Social</title>
+            <identifier>social</identifier>
+            <content>
+                    <![CDATA[
+						<div class="follow">
+						<h3>Stay Connected</h3>
+						<ul class="link-follow">
+						<li class="first"><a class="twitter fa fa-twitter" title="Twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+						<li><a class="google fa fa-google-plus" title="Google" href="#"><span>google </span></a></li>
+						<li><a class="facebook fa fa-facebook" title="Facebook" href="https://www.facebook.com/plazathemes1"><span>facebook</span></a></li>
+						<li><a class="youtube fa fa-youtube" title="Youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+						<li><a class="flickr fa fa-flickr" title="Flickr" href="https://www.youtube.com/user/plazathemes"><span>Flickr </span></a></li>
+						<li><a class="vimeo fa fa-vimeo-square" title="Vimeo" href="#"><span>Vimeo</span></a></li>
+						<li><a class="instagram fa fa-instagram" title="Instagram" href="#"><span>Instagram</span></a></li>
+						</ul>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		
+		
+		<block>
+            <title>Static Top Pander3</title>
+            <identifier>static_top_pander3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-top-skybook3">
+						<div class="container">
+						<div class="container-inner">
+						<div class="col-top-1">
+						<div class="image"><a href="{{store url='furniture.html'}}"><img src="{{media url="wysiwyg/img1-top-skybook3.jpg"}}" alt="image" /></a></div>
+						</div>
+						<div class="col-top-2">
+						<div class="image image1"><a href="{{store url='lighting.html'}}"><img src="{{media url="wysiwyg/img2-top-skybook3.jpg"}}" alt="image" /></a></div>
+						<div class="image image2"><a href="{{store url='rooms.html'}}"><img src="{{media url="wysiwyg/img3-top-skybook3.jpg"}}" alt="image" /></a></div>
+						<div class="image image3"><a href="{{store url='new-collectiony.html'}}"><img src="{{media url="wysiwyg/img4-top-skybook3.jpg"}}" alt="image" /></a></div>
+						<div class="image image4"><a href="{{store url='accessories.html'}}"><img src="{{media url="wysiwyg/img5-top-skybook3.jpg"}}" alt="image" /></a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Category Tab Pander3</title>
+            <identifier>category_tab_pander3</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="Category products" des_title="Browse the collection of our best selling and top interresting products. You&rsquo;ll definitely find what you are looking for." identify="categorytab" category_id="4,5,6" items_default="5" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" show_short_des="0" row_show="2" show_pager="1" template="categorytab/grid.phtml"}}</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Slider Group Pander4</title>
+            <identifier>static_slider_group_pander4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-slider-group">
+						<div class="image"><a href="{{store url='furniture.html'}}"><img src="{{media url="wysiwyg/static-slider-skybook4.jpg"}}" alt="image" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Corporate Pander4</title>
+            <identifier>corporate_pander4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="ma-corporate-about">
+						<div class="owl-container">
+						<div id="corporate">
+						<div class="col ">
+						<div class="block-wrapper wrapper1">
+						<div class="text-des">
+						<p>Free shipping item</p>
+						<span>For all orders over $500</span></div>
+						</div>
+						</div>
+						<div class="col ">
+						<div class="block-wrapper wrapper2">
+						<div class="text-des">
+						<p>Money back guarante</p>
+						<span>100% money back guarante</span></div>
+						</div>
+						</div>
+						<div class="col ">
+						<div class="block-wrapper wrapper3">
+						<div class="text-des">
+						<p>Cash on delivery</p>
+						<span>Lorem ipsum dolor amet</span></div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Top Pander4</title>
+            <identifier>static_top_pander4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-top-skybook4">
+						<div class="col col1">
+						<div class="image"><a href="{{store url='furniture.html'}}"><img src="{{media url="wysiwyg/img2-top-skybook3.jpg"}}" alt="image" /></a></div>
+						</div>
+						<div class="col col2">
+						<div class="image"><a href="{{store url='lighting.html'}}"><img src="{{media url="wysiwyg/img3-top-skybook3.jpg"}}" alt="image" /></a></div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links Pander4</title>
+            <identifier>pt_menu_links_pander4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="{{store url="enable-cookies"}}"><span>Enable Cookies</span></a></li>
+						<li><a href="{{store url="privacy-policy-cookie-restriction-mode"}}"><span>Privacy and Cookie Policy</span></a></li>
+						<li><a href="{{store url="contact"}}"><span>contact us</span></a></li>
+						<li><a href="{{store url="blog"}}"><span>blog</span></a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Top Pander6</title>
+            <identifier>static_top_pander6</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-top-skybook6">
+						<div class="container">
+						<div class="container-inner">
+						<div class="row">
+						<div class="col col-md-3 col-sm-3 col-xs-12">
+						<div class="image"><a href="{{store url='furniture.html'}}"><img src="{{media url="wysiwyg/img1-top-skybook6.jpg"}}" alt="image" /></a></div>
+						</div>
+						<div class="col col-md-5 col-sm-5 col-xs-12">
+						<div class="image"><a href="{{store url='lighting.html'}}"><img src="{{media url="wysiwyg/img2-top-skybook3.jpg"}}" alt="image" /></a></div>
+						</div>
+						<div class="col col-md-4 col-sm-4 col-xs-12">
+						<div class="image"><a href="{{store url='rooms.html'}}"><img src="{{media url="wysiwyg/img3-top-skybook3.jpg"}}" alt="image" /></a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Static Middle Pander6</title>
+            <identifier>static_middle_pander6</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-static static-middle">
+						<div class="container">
+						<div class="owl-container">
+						<div id="static_middle">
+						<div class="col ">
+						<div class="image"><a href="{{store url='audiobooks.html'}}"><img src="{{media url="wysiwyg/img1-middle-skybook6.jpg"}}" alt="image" /></a></div>
+						</div>
+						<div class="col ">
+						<div class="image"><a href="{{store url='chilren-s-books.html'}}"><img src="{{media url="wysiwyg/img2-middle-skybook6.jpg"}}" alt="image" /> </a></div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+    </blocks>
+</ma_pander>
+
